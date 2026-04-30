@@ -1,0 +1,114 @@
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:Poppins,sans-serif;
+}
+body{
+ background:linear-gradient(135deg,#fffdf8,#f8f4ec,#dbeafe);
+ color:#1e293b;
+}
+.navbar{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:20px 8%;
+ background:white;
+ box-shadow:0 5px 20px rgba(0,0,0,0.08);
+ position:sticky;
+ top:0;
+}
+.logo{font-size:30px;font-weight:bold;color:#2563eb;}
+.nav-links{display:flex;list-style:none;gap:30px;}
+.nav-links a{text-decoration:none;color:#334155;font-weight:500;}
+.nav-links a:hover{color:#2563eb;}
+.btn{
+ text-decoration:none;
+ background:#2563eb;
+ color:white;
+ padding:12px 24px;
+ border-radius:8px;
+}
+.btn-outline{
+ text-decoration:none;
+ border:2px solid #2563eb;
+ color:#2563eb;
+ padding:12px 24px;
+ border-radius:8px;
+ margin-left:10px;
+}
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px 8%;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:white;
+    padding:30px 20px;
+    width:280px;
+    min-height:250px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.box h2{
+    color:#2563eb;
+    font-size:32px;
+    line-height:1.2;
+    margin:10px 0;
+    word-break:keep-all;
+}
+.box p{
+    font-size:16px;
+    line-height:1.5;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#071582;
+    color:white;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.project-grid .box{
+    width:100%;
+    padding:15px;
+}
+
+.project-grid .box img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.project-grid .box h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.box h2{color:#2563eb;font-size:40px;}
+@media(max-width:900px){
+ .hero{flex-direction:column;text-align:center;}
+ .hero-text{max-width:100%;}
+ .hero-text h1{font-size:40px;}
+ .hero-image img{width:300px;margin-top:30px;}
+ .stats{flex-direction:column;align-items:center;}
+ .navbar{flex-direction:column;gap:15px;}
+}
