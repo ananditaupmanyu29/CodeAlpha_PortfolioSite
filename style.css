@@ -37,7 +37,48 @@ body{
  border-radius:8px;
  margin-left:10px;
 }
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    min-height:85vh;
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+                url('https://marketplace.canva.com/EAGB49xT5-k/2/0/900w/canva-blue-abstract-aesthetic-phone-wallpaper-6dhhP1KzjwY.jpg');
+    border-radius:20px;
+}
+.hero-text{max-width:50%;}
+.hero-text h1{
+    font-size:58px;
+    line-height:1.2;
+    margin-bottom:10px;
+}
 
+.hero-text h1 span{
+    color:#000000;
+}
+
+.hero-text h2{
+    font-size:28px;
+    font-weight:500;
+    color:#475569;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    color:#64748b;
+    max-width:550px;
+}
+
+.hero-image img{
+    width:300px;
+    height:400px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
 .stats{
     display:flex;
     justify-content:center;
